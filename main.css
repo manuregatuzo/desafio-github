@@ -244,8 +244,7 @@
 
         transition-property: all;
         transition-duration: .5s;
-        transition-timing-function: ease;
-    
+        transition-timing-function: ease;    
     }
 
     ul li:hover{
