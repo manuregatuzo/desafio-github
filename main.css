@@ -241,7 +241,15 @@
         font-size: 30px;
         display: inline-block;
         margin: 0 100px;
+
+        transition-property: all;
+        transition-duration: .5s;
+        transition-timing-function: ease;
     
+    }
+
+    ul li:hover{
+        transform: scale(2);
     }
     
     ul li a{
@@ -396,6 +404,24 @@
         padding-left: 650px;
         padding-top: 100px; 
         width: 500px;
-    } 
+
+        animation-name: ubi;
+        animation-iteration-count: 1;
+        animation-timing-function: ease;
+        animation-duration: 10s;
+        animation-delay: .5s;
+    }
+
+    @keyframes ubi {
+        0%{
+            transform: translateX(1000px);
+        }
+        50%{
+            transform: translateX(20px);
+        }
+        100%{
+            transform: translateX(0px);
+        }
+    }
     
 }
